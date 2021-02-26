@@ -1,0 +1,42 @@
+package tutorial;
+import java.util.Scanner;
+
+public class PatternProblem {
+	public static void main(String args[])
+	{
+		int i,j,n;
+		Scanner o=new Scanner(System.in);
+		System.out.println("ENTER THE STRING");
+		String a=o.next();
+		int x=a.length()-1;
+		
+		n=(a.length())/2;
+		String b=a.substring(0,n);
+		String c=a.concat(b);
+		System.out.print(c);
+		char d[]=c.toCharArray();
+		
+		
+		x--;
+		
+		for(i=n;i<(d.length);i++)
+		{
+			System.out.println();
+			for(j=x;j>0;j--)
+			{
+				System.out.print("  ");
+			}
+			for(int k=n;k<=i;k++)
+			{
+				System.out.print(d[k]);
+			}
+			x--;
+		
+			
+			
+		}
+		
+		
+	}
+
+}
